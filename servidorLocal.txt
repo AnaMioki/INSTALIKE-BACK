@@ -1,0 +1,48 @@
+// primeiro array criado para teste de servidor local
+/* const posts = [
+        { id: 1, descricao: "Um gato adorável dormindo", imagem: "https://example.com/gato.jpg" },
+        { id: 2, descricao: "Uma paisagem montanhosa", imagem: "https://example.com/montanha.jpg" },
+        { id: 3, descricao: "Uma deliciosa pizza", imagem: "https://example.com/pizza.jpg" },
+]; */
+// segundo array de teste para o servidor local
+/* const livros = [ {
+    id: 1,
+    "titulo": "O Senhor dos Anéis",
+    "autor": "J.R.R. Tolkien",
+    "ano": 1954,
+},
+{   id:2, 
+    "titulo": "O poder dos quietos",
+    "autor": "J.R.R Tolkien",
+    "ano": "2341",
+}]; */
+
+//funções para utilizar o metodo GET dos arrays do servidor local, seja para puxar tudo, ou por id especifífco
+/* app.get("/livros", (req,res) => {
+    res.status(200).json(livros);
+}) */
+
+/* function buscarPostPorId (id){
+    return posts.findIndex((post) => {
+        return post.id === Number(id)
+    })
+}
+app.get("/posts/:id", (req, res) => {
+    const index = buscarPostPorId(req.params.id)
+    res.status(200).json(posts[index]);
+});
+
+function buscarIDLivro (id){
+    return livros.findIndex((livro) => {
+        return livro.id  === Number(id)})
+}
+
+app.get("/livros/:id", (req,res) => {
+    const indexLivro = buscarIDLivro(req.params.id)
+    if (indexLivro){
+        res.status(200).json(livros[indexLivro]);
+    }else{
+        res.status(404).json({ mensagem: "Livro não encontrado" });
+    }
+    
+}); */
